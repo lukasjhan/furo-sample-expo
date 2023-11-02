@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import axios from 'axios';
 
-const CLIENT_ID = ''; // Insert your furo project's client id
+const CLIENT_ID = process.env.EXPO_PUBLIC_CLIENT_ID || ''; // Insert your furo project's client id
 
 export default function App() {
   const linking = {
